@@ -1,10 +1,10 @@
 server {
-    listen 80 default_server;
+    listen 8080 default_server;
 
-    root /usr/share/nginx/example.com;
-    index index.php index.html index.htm;
+    root /usr/share/nginx/dox;
+    index index.php index.html index.htm amdocs.html;
 
-    server_name example.com www.example.com;
+    server_name infratest.com www.infratest.com;
     location / {
         try_files $uri $uri/ /index.php;
     }
